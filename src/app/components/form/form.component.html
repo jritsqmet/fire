@@ -1,0 +1,19 @@
+<form >
+    <div class="mb-3 mt-3">
+      <label for="nick" class="form-label">NickName:</label>
+      <input type="text" class="form-control" id="nick" placeholder="Enter nick" #nick>
+    </div>
+
+    <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="text" class="form-control" id="email" placeholder="Enter email" #mail>
+      </div>
+
+    <div class="mb-3">
+      <label for="edad" class="form-label">Edad:</label>
+      <input type="number" class="form-control" id="edad" placeholder="Enter " #ed >
+    </div>
+    
+    <button type="submit" class="btn btn-primary" 
+    (click)="guardarPersonal( nick.value, mail.value, ed.value)">Enviar</button>
+  </form>
